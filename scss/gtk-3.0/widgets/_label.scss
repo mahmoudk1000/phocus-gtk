@@ -7,4 +7,9 @@ label {
     background: colors.$accent-primary;
     color: lighten(colors.$white-strong, 50%);
   }
+
+  hover {
+    background: colors.$accent-primary;
+    color: lighten(colors.$white-strong, 30%);
+  }
 }

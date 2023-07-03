@@ -20,9 +20,11 @@ entry {
   image {
     &.left {
       margin-right: config.$spacing-medium;
+      margin-left: config.$spacing-large;
     }
     &.right {
       margin-left: config.$spacing-medium;
+      margin-right: config.$spacing-large;
     }
   }
 

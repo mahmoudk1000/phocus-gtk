@@ -1,0 +1,120 @@
+@use "sass:color";
+@use "../colors";
+@use "../config";
+
+window.thunar {
+  background: none;
+
+  treeview {
+    background: none;
+  }
+
+  .view {
+    background-color: colors.$surface-strongest;
+    color: colors.$white-strongest;
+  }
+  
+  grid {
+    *:selected,
+    *:active {
+      background: colors.$surface-strongest;
+      border-radius: config.$radius;
+    }
+  }
+
+  .sidebar {
+    background: colors.$surface-strongest;
+    padding: config.$spacing-small;
+    *:selected,
+    *:active {
+      color: colors.$surface-strongest;
+      background-color: colors.$white-strongest;
+    }
+  }
+
+  .view:hover,
+  .view:selected {
+    color: colors.$white-strongest;
+    background-color: colors.$surface-weak;
+    border-radius: config.$radius;
+  }
+
+  .view selection,
+  .view:selected {
+    color: colors.$white-strongest;
+    background-color: colors.$surface-moderate;
+    border-radius: config.$radius;
+  }
+
+  treeview {
+    padding: config.$spacing-small;
+    background-color: colors.$surface-strongest;
+    color: colors.$surface-weakest;
+    &:selected {
+      background: colors.$accent-primary;
+      color: colors.$white-strongest;
+      font-weight: bold;
+      margin: 1px;
+    }
+  }
+
+  sidebar treeview .view {
+    padding: 6px 0px;
+    margin: 4px;
+  }
+
+  .frame {
+    border: 0;
+  }
+
+  toolbar {
+    entry {
+      background: colors.$surface-moderate;
+      border-radius: config.$radius;
+
+      margin: 2px 2em 2px 1em;
+      padding: 0px 1rm;
+
+      image {
+        background-image: image(rgba(255, 255, 255, 0));
+      }
+    }
+  }
+  
+  toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button, .thunar toolbar .path-bar-button {
+    background: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  paned grid {
+    background: colors.$surface-strong;
+  }
+
+  toolbar {
+    background: colors.$surface-strongest;
+    padding: 5px 0;
+  }
+
+  toolbar * {
+    background: none;
+  }
+
+  /* hide separator */
+  separator {
+    background-image: image(rgb(19, 23, 24));
+    background-size: 1px 1px;
+    background-position: center center;
+  }
+
+  statusbar {
+    margin-left: -15px;
+    margin-right: -10px;
+    padding-left: 20px;
+    background: colors.$surface-strong;
+    color: colors.$surface-weakest;
+    font-weight: bold;
+    font-size: smaller;
+  }
+}

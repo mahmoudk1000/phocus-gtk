@@ -3,11 +3,30 @@
 
 toolbar, .toolbar {
   background: colors.$surface-strong;
-  padding: config.$spacing-medium;
+  padding: config.$spacing-small;
 
   &.osd {
     background: colors.$surface-weak;
     padding: config.$spacing-medium;
     border-radius: config.$radius;
   }
+
+  button {
+    label {
+      margin-right: 3px;
+      margin-left: 3px;
+    }
+    image {
+      margin: auto;
+    }
+  }
+  
+  scale {
+    trough {
+      highlight {
+        background: colors.$accent-primary;
+      }
+    }
+  }
+
 }
