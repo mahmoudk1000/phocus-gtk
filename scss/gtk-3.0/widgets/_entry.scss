@@ -3,7 +3,7 @@
 @use '../config';
 
 entry {
-  padding: calc(config.$spacing-medium - config.$border-size);
+  padding: config.$spacing-medium;
   border-radius: config.$radius;
   border: config.$border-size solid colors.$white-weakest;
   background: colors.$white-weakest;
