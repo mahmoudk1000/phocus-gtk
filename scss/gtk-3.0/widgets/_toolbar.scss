@@ -1,9 +1,38 @@
-@use '../colors';
+@use "../colors";
 
-toolbar {
-  background: colors.$surface-2;
+// toolbar {
+//   background: colors.$surface-1;
+//   &.osd {
+//     background: colors.$surface-4;
+//     padding: 10px;
+//   }
+// }
+
+toolbar, .toolbar {
+  background: colors.$surface-1;
+  color: colors.$foreground-color;
+  padding: 4px;
+
   &.osd {
-    background: transparentize(colors.$surface-3, 0.5);
-    padding: 10px;
+    background: colors.$surface-1;
+    padding: 4px;
+    border: 2px solid colors.$surface-3;
+    border-radius: 4px;
   }
+  button {
+    label {
+      margin-right: 3px;
+      margin-left: 3px;
+    }
+    image {
+      margin: auto;
+    }
+  }
+  scale {
+    trough {
+      highlight {
+        background: colors.$accent-1;
+      }
+    }
+  } 
 }

@@ -1,13 +1,13 @@
-@use '../colors';
+@use "../colors";
 
 // TODO: check if full width horizontal separators are possible
 
 treeview {
-  -GtkTreeView-expander-size: 13;
-  -GtkTreeView-grid-line-pattern: '';
-  -GtkTreeView-tree-line-pattern: '';
-  -GtkTreeView-horizontal-separator: 8;
-  -GtkTreeView-vertical-separator: 8;
+  -gtktreeview-expander-size: 13;
+  -gtktreeview-grid-line-pattern: "";
+  -gtktreeview-tree-line-pattern: "";
+  -gtktreeview-horizontal-separator: 8;
+  -gtktreeview-vertical-separator: 8;
 
   background: colors.$surface-2;
 
@@ -19,9 +19,9 @@ treeview {
   }
 
   &:selected {
-    background: colors.$accent-7;
+    background: colors.$accent-1;
     // TODO: introduce contrast foreground color (light)
-    color: lighten(colors.$accent-7, 50%);
+    color: lighten(colors.$accent-1, 50%);
   }
 
   &.separator {

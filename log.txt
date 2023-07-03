@@ -1,0 +1,84 @@
+[1m[7m%[27m[1m[0m                                                                                [5 q[0m[27m[24m[J[1;2;33mma7m0d[0m in [48;2;17;23;29;38;2;250;227;176m [0m[48;2;17;23;29;38;2;250;227;176m~/.themes/[0m[1;48;2;17;23;29;38;2;150;205;251mphocus[0m[48;2;17;23;29;38;2;250;227;176m[0m[48;2;17;23;29;38;2;250;227;176m [0m[48;2;17;23;29;38;2;12;17;21m[0m[48;2;12;17;21;38;2;181;232;224m [0m[48;2;12;17;21;38;2;181;232;224mmaster[0m[48;2;17;23;29;38;2;12;17;21m[0m[48;2;17;23;29;38;2;12;17;21m[0m[48;2;12;17;21;38;2;250;227;176m 凜[0m[48;2;12;17;21;38;2;250;227;176m20[0m[48;2;12;17;21;38;2;250;227;176m  [0m[48;2;12;17;21;38;2;250;227;176m2[0m[48;2;12;17;21;38;2;250;227;176m  [0m[48;2;12;17;21;38;2;250;227;176m1[0m[48;2;17;23;29;38;2;12;17;21m[0mvia [1;32m [0m[1;32mv18.3.0[0m[1;32m [0m
+[1;32m➜[0m  [K[?2004h[32mnpm[39m run watch_and_reload[?2004l
+
+> phisch@0.0.1 watch_and_reload
+> npm run watch | tee /dev/tty | grep --line-buffered 'Compiled' | while read -r l; do npm run reload_gtk_theme --silent; done;
+
+
+> phisch@0.0.1 watch
+> sass scss:. -w --no-source-map --color
+
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+Sass is watching for changes. Press Ctrl-C to stop.
+
+sh: line 1: kill: (199783) - No such process
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+sh: line 1: kill: (236877) - No such process
+Error: expected "{".
+[34m    ╷[0m
+[34m227 │[0m /[31m[0m
+[34m    │[0m [31m ^[0m
+[34m    ╵[0m
+  scss/gtk-3.0/applications/_thunar.scss 227:2  @use
+  scss/gtk-3.0/applications/_index.scss 4:1     @use
+  scss/gtk-3.0/gtk.scss 1:1                     root stylesheet
+
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+sh: line 1: kill: (243717) - No such process
+Error: expected more input.
+[34m    ╷[0m
+[34m247 │[0m }[31m[0m
+[34m    │[0m [31m ^[0m
+[34m    ╵[0m
+  scss/gtk-3.0/applications/_thunar.scss 247:2  @use
+  scss/gtk-3.0/applications/_index.scss 4:1     @use
+  scss/gtk-3.0/gtk.scss 1:1                     root stylesheet
+
+Error: expected more input.
+[34m    ╷[0m
+[34m247 │[0m }[31m[0m
+[34m    │[0m [31m ^[0m
+[34m    ╵[0m
+  scss/gtk-3.0/applications/_thunar.scss 247:2  @use
+  scss/gtk-3.0/applications/_index.scss 4:1     @use
+  scss/gtk-3.0/gtk.scss 1:1                     root stylesheet
+
+Error: expected more input.
+[34m    ╷[0m
+[34m247 │[0m }[31m[0m
+[34m    │[0m [31m ^[0m
+[34m    ╵[0m
+  scss/gtk-3.0/applications/_thunar.scss 247:2  @use
+  scss/gtk-3.0/applications/_index.scss 4:1     @use
+  scss/gtk-3.0/gtk.scss 1:1                     root stylesheet
+
+Error: expected more input.
+[34m    ╷[0m
+[34m247 │[0m }[31m[0m
+[34m    │[0m [31m ^[0m
+[34m    ╵[0m
+  scss/gtk-3.0/applications/_thunar.scss 247:2  @use
+  scss/gtk-3.0/applications/_index.scss 4:1     @use
+  scss/gtk-3.0/gtk.scss 1:1                     root stylesheet
+
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+sh: line 1: kill: (262921) - No such process
+sh: line 1: kill: (263250) - No such process
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+sh: line 1: kill: (270765) - No such process
+sh: line 1: kill: (271096) - No such process
+Error: expected more input.
+[34m    ╷[0m
+[34m247 │[0m }[31m[0m
+[34m    │[0m [31m ^[0m
+[34m    ╵[0m
+  scss/gtk-3.0/applications/_thunar.scss 247:2  @use
+  scss/gtk-3.0/applications/_index.scss 4:1     @use
+  scss/gtk-3.0/gtk.scss 1:1                     root stylesheet
+
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+sh: line 1: kill: (273779) - No such process
+[32mCompiled scss/gtk-3.0/gtk.scss to gtk-3.0/gtk.css.[0m
+sh: line 1: kill: (274273) - No such process

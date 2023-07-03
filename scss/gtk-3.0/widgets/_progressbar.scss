@@ -1,11 +1,12 @@
-@use '../colors';
+@use "../colors";
 
 progressbar {
-
   trough {
-    background: colors.$highlight;
+    background: colors.$surface-2;
+    border-radius: 2px;
     progress {
-      background: colors.$secondary-accent;
+      border-radius: 2px;
+      background: colors.$accent-1;
     }
   }
 }

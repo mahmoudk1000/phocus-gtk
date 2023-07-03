@@ -1,15 +1,16 @@
-@use '../colors';
+@use "../colors";
 
 entry {
   transition: all 100ms ease-in-out;
-  background: transparentize(white, 0.95);
+  background: transparentize(colors.$foreground-color, 0.95);
   border: 2px solid transparent;
-  padding: 6px;
-  border-radius: 5px;
+  padding: 8px;
+  margin: 6px;
+  border-radius: 3px;
 
   &:focus {
-    border-color: colors.$accent-7;
-    background: transparentize(white, 0.9);
+    border-color: colors.$accent-1;
+    background: transparentize(colors.$foreground-color, 0.9);
   }
 
   &:disabled {
@@ -17,8 +18,14 @@ entry {
   }
 
   image {
-    &.left { margin-right: 8px; }
-    &.right { margin-left: 8px; }
+    &.left {
+      margin-right: 8px;
+      margin-left: 12px;
+    }
+    &.right {
+      margin-left: 8px;
+      margin-right: 12px;
+    }
   }
 
   selection {

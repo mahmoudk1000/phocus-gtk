@@ -1,0 +1,118 @@
+@use "../colors";
+
+window.thunar {
+  background: none;
+
+  treeview {
+    background: none;
+  }
+
+  .view {
+    background-color: colors.$surface-1;
+    color: colors.$foreground-color;
+  }
+  
+  grid {
+    *:selected,
+    *:active {
+      background: colors.$surface-1;
+      border-radius: 3px;
+    }
+  }
+
+  .sidebar {
+    background: colors.$surface-1;
+    padding: 8px;
+    *:selected,
+    *:active {
+      color: colors.$surface-1;
+      background-color: colors.$foreground-color;
+    }
+  }
+
+  .view:hover,
+  .view:selected {
+    color: colors.$foreground-color;
+    background-color: colors.$surface-4;
+    border-radius: 4px;
+  }
+
+  .view selection,
+  .view:selected {
+    color: colors.$foreground-color;
+    background-color: colors.$surface-3;
+    border-radius: 4px;
+  }
+
+  treeview {
+    padding: 3px;
+    background-color: colors.$surface-1;
+    color: colors.$dimed;
+    &:selected {
+      background: colors.$accent-1;
+      color: colors.$foreground-color;
+      font-weight: bold;
+      margin: 1px;
+    }
+  }
+
+  sidebar treeview .view {
+    padding: 6px 0px;
+    margin: 4px;
+  }
+
+  .frame {
+    border: 0;
+  }
+
+  toolbar {
+    entry {
+      background: colors.$surface-3;
+      border-radius: 10px;
+
+      margin: 2px 2em 2px 1em;
+      padding: 0px 1rm;
+
+      image {
+        background-image: image(rgba(255, 255, 255, 0));
+      }
+    }
+  }
+  
+  toolbar#location-toolbar > toolitem > widget > widget.linked.path-bar > button.path-bar-button, .thunar toolbar .path-bar-button {
+    background: none;
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+  
+  paned grid {
+    background: colors.$surface-2;
+  }
+
+  toolbar {
+    background: colors.$surface-1;
+    padding: 5px 0;
+  }
+
+  toolbar * {
+    background: none;
+  }
+
+  /* hide separator */
+  separator {
+    background-image: image(rgb(19, 23, 24));
+    background-size: 1px 1px;
+    background-position: center center;
+  }
+
+  statusbar {
+    margin-left: -15px;
+    margin-right: -10px;
+    padding-left: 20px;
+    background: colors.$surface-2;
+    color: colors.$dimed;
+    font-weight: bold;
+    font-size: smaller;
+  }
+}

@@ -1,4 +1,4 @@
-@use '../colors';
+@use "../colors";
 
 window.nautilus-window {
   .nautilus-menu-sort-heading {
@@ -7,7 +7,8 @@ window.nautilus-window {
 
   // those are the items inside the nautilus canvas
   .nautilus-canvas-item {
-    &:selected, &:active {
+    &:selected,
+    &:active {
       background: #2d2d2d;
       border-radius: 3px;
     }

@@ -1,4 +1,4 @@
-@use '../colors';
+@use "../colors";
 
 textview {
   transition: background 100ms ease-in-out;
@@ -12,6 +12,11 @@ textview {
 
   &:disabled {
     opacity: 0.3;
+  }
+
+  &:hover {
+    background-color: colors.$accent-1;
+    color: colors.$surface-1;
   }
 
   selection {

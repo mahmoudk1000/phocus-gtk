@@ -1,7 +1,7 @@
-@use '../colors';
+@use "../colors";
 
 // TODO: extract to nautilus specific stylesheet, since this will be removed from gtk because only nautilus uses it
-placessidebar  {
+placessidebar {
   background: colors.$surface-2;
 
   list {
@@ -9,7 +9,7 @@ placessidebar  {
 
     row {
       &:hover {
-        background: rgba(0,0,0,0.2);
+        background: rgba(0, 0, 0, 0.2);
       }
 
       .sidebar-icon {
@@ -18,7 +18,8 @@ placessidebar  {
     }
   }
 
-  &.frame, .frame {
+  &.frame,
+  .frame {
     border: 0;
   }
 }

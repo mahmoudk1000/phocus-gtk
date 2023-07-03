@@ -1,9 +1,17 @@
-@use '../colors';
+@use "../colors";
 
 label {
-  &.dim-label, &:disabled { opacity: 0.3; }
+  &.dim-label,
+  &:disabled {
+    opacity: 0.3;
+  }
 
   selection {
+    background: colors.$primary-accent;
+    color: lighten(colors.$foreground-color, 50%);
+  }
+
+  hover {
     background: colors.$primary-accent;
     color: lighten(colors.$foreground-color, 50%);
   }

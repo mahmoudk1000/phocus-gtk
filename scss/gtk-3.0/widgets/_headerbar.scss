@@ -1,4 +1,4 @@
-@use '../colors';
+@use "../colors";
 
 headerbar {
   background: colors.$surface-3;
@@ -20,14 +20,14 @@ headerbar {
     padding: 15px 10px;
     border-radius: 0;
 
-    &:nth-last-child(-n+2) {
+    &:nth-last-child(-n + 2) {
       margin-left: -6px;
     }
 
     $titlebutton_to_color: (
       minimize: colors.$accent-3,
       maximize: colors.$accent-4,
-      close: colors.$accent-1
+      close: colors.$accent-1,
     );
 
     @each $type, $color in $titlebutton_to_color {
@@ -40,7 +40,7 @@ headerbar {
     }
 
     &:hover {
-      color: rgba(0,0,0,0.5);
+      color: rgba(0, 0, 0, 0.5);
     }
   }
 
